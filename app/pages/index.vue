@@ -4,6 +4,6 @@ import AuthLayout from '~/layouts/AuthLayout.vue';
 
 <template>
   <AuthLayout
-    ><div class="pl-6 pt-6 pb-13 h-full"><Trustpilot /></div
+    ><div class="h-full"><Trustpilot /></div
   ></AuthLayout>
 </template>
