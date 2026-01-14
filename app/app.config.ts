@@ -16,5 +16,10 @@ export default defineAppConfig({
         base: 'inline-flex items-center justify-center transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none',
       },
     },
+    navigationMenu: {
+      slots: {
+        item: 'flex items-center justify-center h-10 p-2 w-full',
+      },
+    },
   },
 });
