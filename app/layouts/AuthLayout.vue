@@ -1,7 +1,8 @@
+<script lang="ts"></script>
+
 <template>
-  <div
-    class="relative w-full h-screen bg-[rgba(12,26,57,1)] p-6 overflow-hidden">
-    <slot />
+  <div class="relative w-full h-screen p-6 overflow-hidden">
+    <div class="flex h-full"><Trustpilot /><slot /></div>
     <UiBackgroundGradient />
   </div>
 </template>

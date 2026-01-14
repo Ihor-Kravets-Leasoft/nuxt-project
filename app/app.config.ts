@@ -11,5 +11,10 @@ export default defineAppConfig({
         },
       },
     },
+    button: {
+      slots: {
+        base: 'inline-flex items-center justify-center transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none',
+      },
+    },
   },
 });

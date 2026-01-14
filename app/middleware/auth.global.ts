@@ -1,11 +1,11 @@
-export default defineNuxtRouteMiddleware((to) => {
-  const { user } = useAuth();
+export default defineNuxtRouteMiddleware(to => {
+  const { isAuthenticated } = useAuth();
 
   // Разрешаем доступ к login/register
-  if (to.path === "/login" || to.path === "/register") return;
+  if (to.path === '/login' || to.path === '/register' || to.path === '/register-verify') return;
 
   // Если пользователь не авторизован — отправляем на /login
-  if (!user.value) {
-    return navigateTo("/login");
+  if (!isAuthenticated.value) {
+    return navigateTo('/login');
   }
 });

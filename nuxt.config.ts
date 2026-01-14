@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import svgLoader from 'vite-svg-loader';
+
 export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
@@ -11,6 +13,10 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/ui',
     '@nuxt/eslint',
+    '@vueuse/nuxt',
   ],
   css: ['./app/tailwind.css'],
+  vite: {
+    plugins: [svgLoader()],
+  },
 });

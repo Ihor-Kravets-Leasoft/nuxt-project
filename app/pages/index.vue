@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import AuthLayout from '~/layouts/AuthLayout.vue';
+import MainLayout from '~/layouts/MainLayout.vue';
 </script>
 
 <template>
-  <AuthLayout
-    ><div class="h-full"><Trustpilot /></div
-  ></AuthLayout>
+  <MainLayout>
+    <div class="h-full">
+    </div>
+  </MainLayout>
 </template>
